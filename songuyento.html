@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>songuyento</title>
+</head>
+<body>
+<p id="demo"><br></p>
+<script>
+    let numbers = parseInt(prompt("Nhập số lượng số nguyên tố"));
+    let count = 0;
+    let N = 2;
+    while (count < numbers) {
+        let n = 0;
+        for (let i = 2; i <= N; i++) {
+            if (N % i == 0) {
+                n = n + i;
+            }
+
+            }if (N == n) {
+            count++;
+            document.getElementById("demo").innerHTML += N + "<br>";
+        }N++;
+    }
+
+</script>
+</body>
+</html>
